@@ -88,6 +88,9 @@ function AddItemForm({ onNewItem }) {
                 setSubmitting(false);
                 setNewItem('');
             });
+
+            .then(r =>r.Form())
+            onended.console.error();
     };
 
     return (
